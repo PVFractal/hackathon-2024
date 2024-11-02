@@ -1,24 +1,30 @@
 
 
 let timer = 0;
-setInterval(function() {
-  timer += 1;
-  if (timer == 3) {
-    makeAd('images/patagonia1.PNG', 1);
-  }
-  if (timer == 5) {
-    makeAd('images/patagonia2.PNG', 2);
-  }
-  if (timer == 8) {
-    makeAd('images/patagonia3.PNG', 4);
-  }
 
-  if (timer == 11) {
-    makeScreenAd('images/pug.PNG');
-  }
-}, 1000);
+function startInterval() {
+  const interval = setInterval(function() {
+    timer += 1;
+    if (timer == 3) {
+      makeScreenAd('images/dessert-recipes.PNG');
+      clearInterval(interval);
+    }
+    if (timer == 5) {
+      makeAd('images/patagonia2.PNG', 2);
+    }
+    if (timer == 8) {
+      makeAd('images/patagonia3.PNG', 4);
+    }
+    if (timer == 11) {
+      makeScreenAd('images/pug.PNG');
+    }
+  }, 1000);
+}
 
-const categories = document.querySelectorAll('.category');
+startInterval();
+
+
+const categories = document.querySelectorAll('.recipe');
 
 categories.forEach(catogory =>
   catogory.addEventListener('click', function() {
@@ -175,6 +181,7 @@ function makeScreenAd(src) {
     newX.style.cursor = "";
   })
   newX.addEventListener('click', function() {
+    startInterval();
     body.removeChild(newDark);
   })
 

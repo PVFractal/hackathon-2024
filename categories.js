@@ -12,7 +12,6 @@ setInterval(function() {
   if (timer == 8) {
     makeAd('images/patagonia3.PNG', 4);
   }
-
   if (timer == 11) {
     makeScreenAd('images/pug.PNG');
   }
@@ -25,7 +24,6 @@ categories.forEach(catogory =>
     window.location.href = "desserts.html";
   })
 );
-
 
 function makeAd(src, position) {
   const body = document.getElementById('mainBody');

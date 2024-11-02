@@ -2,20 +2,20 @@
   text-align: center;
   padding: 5px;
   margin: 0;
-  background-color: rgb(208, 199, 187);
+  background-color: rgb(117, 90, 81);
 }
 
 h1 {
-  background-color: rgb(0, 198, 220);
+  background-color: rgb(91, 17, 23);
   font-family: cursive;
   font-size: 70px;
   padding: 15px;
   margin-top: 0;
-  color:rgb(231, 255, 78);
+  color:rgb(255, 78, 78);
 }
 
 #mainDiv {
-  background-color: rgb(255, 245, 232);
+  background-color: rgb(177, 137, 123);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -23,23 +23,23 @@ h1 {
   padding: 40px;
 }
 
-.category {
+.recipe {
   border: solid gray 3px;
   width: 200px;
   text-align: center;
   background-color: rgb(203, 87, 87);
 }
-.category img {
+.recipe img {
   position: relative;
   left: 0%;
 }
-.category span {
+.recipe span {
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   display: block;
 }
 
-.category:hover {
+.recipe:hover {
   scale: 1.1;
   cursor: pointer;
 }
