@@ -1,0 +1,97 @@
+
+#mainBody {
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  background-color: rgb(255, 245, 232);
+}
+
+h1 {
+  background-color: rgb(0, 198, 220);
+  font-family: cursive;
+  font-size: 70px;
+  padding: 15px;
+  margin-top: 0;
+  color:rgb(231, 255, 78);
+  animation-name: changeSize;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeSize {
+  0% {scale: 1;}
+  50% {scale: 1.1;}
+  100% {scale: 1;}
+}
+
+#mainContainer {
+  align-items: center;
+  text-align: center;
+}
+
+.clicker:hover {
+  scale: 1.2;
+  cursor:pointer;
+}
+#startClicker {
+  font-size: 40px;
+  font-family: 'Trebuchet MS';
+  color:rgb(92, 92, 226);
+}
+
+#lowbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+#myRange {
+  visibility: hidden;
+  width: 200px;
+}
+
+#sparkles {
+  background-color: rgba(0,0,0,0);
+  left: 500px;
+  position: absolute;
+}
+
+
+.skull {
+  opacity: 0;
+  visibility: hidden;
+}
+#skullLeft {
+  position: absolute;
+  width: 300px;
+  left: 100px;
+  top: 200px;
+}
+#skullRight {
+  position: absolute;
+  width: 300px;
+  right: 100px;
+  top: 200px;
+}
+#metalTitle {
+  position: absolute;
+  width: 450px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+#metalStart {
+  position: absolute;
+  width: 450px;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+#labe {
+  color: white;
+  font-size: 30px;
+  visibility: hidden;
+}

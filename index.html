@@ -3,9 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Recipe Cookbook</title>
+  <link rel="stylesheet" href="main.css"/>
 </head>
-<body>
-  
+<body id = "mainBody">
+  <img src="images/Skull.png" alt="skull" id = 'skullLeft' class = 'skull'/>
+  <img src="images/Skull.png" alt="skull" id = 'skullRight' class = 'skull'/>
+  <img src="images/words/word1.png" alt="recipe title" id = 'metalTitle'/>
+  <img src="images/words/start1.PNG" alt="start title" id = 'metalStart'/>
+
+  <h1 id = "title">Recipe Cookbook</h1>
+  <div id = "mainContainer">
+    <h2 class="clicker" id = "startClicker">Start!</h2>
+    <img src="images/pie.png" alt = "pie" id = "pie">
+    <canvas id="sparkles" width="420" height="350"></canvas>
+  </div>
+  <div id="lowbar">
+    <div>
+      <label for="myRange" id="labe">Metal: </label>
+      <input type="range" min="1" max="99" value="1" class="slider" id="myRange">
+    </div>
+    <h2 class = "clicker" id = "darkMode">Dark Mode</h2>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
