@@ -10,14 +10,27 @@ function startInterval() {
       clearInterval(interval);
     }
     if (timer == 5) {
-      makeAd('images/patagonia2.PNG', 2);
+      makeAd('images/weight1.PNG', 4);
     }
-    if (timer == 8) {
-      makeAd('images/patagonia3.PNG', 4);
+    if (timer == 6) {
+      makeAd('images/weight2.PNG', 5);
     }
-    if (timer == 11) {
-      makeScreenAd('images/pug.PNG');
+    if (timer == 7) {
+      makeAd('images/weight3.PNG', 6);
     }
+
+    if (timer == 10) {
+      makeAd('images/pug.PNG', 1);
+    }
+    if (timer == 12) {
+      makeAd('images/renee.PNG', 2);
+      makeScreenAd('images/renee.PNG');
+      clearInterval(interval);
+    }
+    if (timer == 14) {
+      makeAd('images/pug2.PNG', 3);
+    }
+
   }, 1000);
 }
 
@@ -28,7 +41,7 @@ const categories = document.querySelectorAll('.recipe');
 
 categories.forEach(catogory =>
   catogory.addEventListener('click', function() {
-    window.location.href = "desserts.html";
+    window.location.href = "cake.html";
   })
 );
 
