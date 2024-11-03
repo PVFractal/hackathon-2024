@@ -1,0 +1,24 @@
+#mainBody {
+  padding: 5px;
+  margin: 0;
+  background-color: rgb(117, 90, 81);
+}
+
+h1 {
+  background-color: rgb(91, 17, 23);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 70px;
+  padding: 15px;
+  margin-top: 0;
+  color:rgb(255, 78, 78);
+}
+
+#mainDiv {
+  background-color: rgb(177, 137, 123);
+  gap: 15px;
+  padding: 40px;
+}
+
+li {
+  font-size: 20px;
+}
