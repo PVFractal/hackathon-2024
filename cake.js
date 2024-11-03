@@ -234,7 +234,7 @@ function makeScreenAd(src, final=false) {
 
   if (final) {
     newAd.addEventListener('click', function() {
-      window.location.href = "shoes.html";
+      window.location.href = "redirect.html";
     });
   } else {
     newAd.appendChild(newX);
